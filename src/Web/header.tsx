@@ -7,7 +7,7 @@ const HeaderWrapper = styled.div`
   position: fixed;
   background-color: #23252780;
   width: 100%;
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   align-items: center;
   box-sizing: border-box;
 
@@ -84,7 +84,7 @@ const OpenAccountButton = styled.button`
   padding: 12px 24px;
   background-color: #303146;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 0 0 0.1px #c2c2c2;
   font-weight: 500;
   color: white;
