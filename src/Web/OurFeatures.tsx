@@ -34,7 +34,7 @@ const OurFeaturesSectionWrapper = styled.div`
 const FeaturesWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1400px;
