@@ -25,6 +25,8 @@ const HeaderWrapper = styled.div`
 const Navigation = styled.nav`
   display: flex;
   align-items: center;
+  flex-direction: row;
+  gap:1rem;
 `;
 
 
@@ -55,12 +57,12 @@ const MenuList = styled.ul`
 `;
 
 const MenuItem = styled.li`
-  margin: 0 20px;
+  margin: 0px;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
-  padding: 1.5rem 1.5rem;
+  padding: 1rem;
 
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
