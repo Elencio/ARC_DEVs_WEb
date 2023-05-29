@@ -31,7 +31,7 @@ const HowItWorksSectionWrapper = styled.div`
 const StepsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1400px;
