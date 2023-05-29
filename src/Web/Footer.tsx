@@ -142,8 +142,8 @@ export function Footer() {
         </LegalLinksWrapper>
         <SocialMediaWrapper>
           <FacebookLogo size={32} weight="fill" color='#4763ff' />
-          <LinkedinLogo size={32} weight="fill" />
-          <InstagramLogo size={32} weight="fill" />
+          <LinkedinLogo size={32} weight="fill" color='#4763ff'/>
+          <InstagramLogo size={32} weight="fill" color='#4763ff'/>
         </SocialMediaWrapper>
 
       </FooterWrapper>
