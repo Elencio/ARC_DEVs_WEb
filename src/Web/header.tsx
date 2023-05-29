@@ -7,7 +7,7 @@ const HeaderWrapper = styled.div`
   position: fixed;
   background-color: #23252780;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 1.8rem;
   align-items: center;
   box-sizing: border-box;
 
