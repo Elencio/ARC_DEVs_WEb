@@ -7,7 +7,7 @@ const HeaderWrapper = styled.div`
   position: fixed;
   background-color: #23252780;
   width: 100%;
-  padding: 0.5rem 2.5rem;
+  padding: 0 2.5rem;
   align-items: center;
   box-sizing: border-box;
 
@@ -62,6 +62,7 @@ const MenuItem = styled.li`
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
+  padding: 2rem;
 
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
