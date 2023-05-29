@@ -47,7 +47,7 @@ const StepCard = styled.div`
   line-height: 1.7rem;
   margin-top: 1.2rem;
   padding: 1rem 0.5rem;
-  width: 300px;
+  width: 280px;
   height: 350px;
   background-color: #1c1f26;
   border-radius: 10px;

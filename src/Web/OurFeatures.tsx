@@ -49,7 +49,7 @@ const FeatureCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  width: 280px;
   height: 350px;
   align-self: stretch;
   backdrop-filter: none;
