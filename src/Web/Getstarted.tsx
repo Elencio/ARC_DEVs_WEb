@@ -45,7 +45,7 @@ export function GetStartedTodaySection(){
     <GetStartedTodaySectionWrapper>
       <h2>Get Started Today</h2>
       <p>
-        Start managing your finances more efficiently and effectively with Intellifinance today.
+        Start managing your finances more efficiently and effectively with ARC-DEVs today.
       </p>
       <button>Open Your Account</button>
     </GetStartedTodaySectionWrapper>

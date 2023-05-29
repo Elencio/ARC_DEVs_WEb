@@ -32,8 +32,9 @@ const OurFeaturesSectionWrapper = styled.div`
 `;
 
 const FeaturesWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  grid-gap: 2rem;
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;

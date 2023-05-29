@@ -51,7 +51,7 @@ const ButtonsWrapper = styled.div`
 export function WhyChooseIntellifinanceSection(){
   return (
     <WhyChooseIntellifinanceSectionWrapper>
-      <h2>Why Choose Intellifinance</h2>
+      <h2>Why Choose ARC-DEVs</h2>
       <p>
         We offer a variety of features and benefits that set us apart. See why you should choose us:
       </p>
