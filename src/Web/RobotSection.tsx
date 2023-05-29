@@ -144,7 +144,7 @@ export function RobotSection(){
        <img src={Imagegreen} alt="" className='Image4'/>
        <img src={Imagegreen} alt="" className='Image5'/>
       <h2>Conectando Codigo</h2>
-      <p>Intellifinance is here to revolutionize the financial service industry.<br />We are using cutting-edge technology to bring you the best experience.</p>  <KeywordsWrapper>
+      <p>ARC-DEVs is here to revolutionize the financial service industry.<br />We are using cutting-edge technology to bring you the best experience.</p>  <KeywordsWrapper>
         <p>Design UI/UX</p>
         <p>Web Development</p>
         <p>Big Data</p>
