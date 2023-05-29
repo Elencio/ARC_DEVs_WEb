@@ -31,7 +31,8 @@ const Navigation = styled.nav`
 const MenuList = styled.ul`
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  gap: 1rem;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -78,7 +79,7 @@ const MenuItem = styled.li`
 `;
 
 const OpenAccountButton = styled.button`
-  padding: 12px 25px;
+  padding: 10px 23px;
   background-color: #303146;
   border: none;
   border-radius: 30px;
