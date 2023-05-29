@@ -26,7 +26,7 @@ const Navigation = styled.nav`
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap:1rem;
+  gap:2rem;
 `;
 
 
@@ -62,7 +62,7 @@ const MenuItem = styled.li`
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
-  padding: 1rem;
+  padding: 1.5rem;
 
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
