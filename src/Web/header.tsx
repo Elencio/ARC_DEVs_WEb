@@ -7,7 +7,7 @@ const HeaderWrapper = styled.div`
   position: fixed;
   background-color: #23252780;
   width: 100%;
-  padding: 0 2.5rem;
+  padding: 0.5rem 2.5rem;
   align-items: center;
   box-sizing: border-box;
 
@@ -81,10 +81,10 @@ const MenuItem = styled.li`
 `;
 
 const OpenAccountButton = styled.button`
-  padding: 10px 23px;
+  padding: 12px 24px;
   background-color: #303146;
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 0 0 0 0.1px #c2c2c2;
   font-weight: 500;
   color: white;
@@ -93,7 +93,7 @@ const OpenAccountButton = styled.button`
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
-  font-size: 1rem;
+  font-size: 0.8rem;
 
   &:hover {
     background-color: #484d5b;
