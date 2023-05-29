@@ -7,13 +7,13 @@ const HeaderWrapper = styled.div`
   position: fixed;
   background-color: #23252780;
   width: 100%;
-  padding: 0 3rem;
+  padding: 0 2.5rem;
   align-items: center;
   box-sizing: border-box;
 
   span {
     font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+    font-weight: 500;
   color: #fff;
   line-height: 1.7rem;
   font-size: 1.2rem;
@@ -33,10 +33,9 @@ const MenuList = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: 0;
   padding: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
