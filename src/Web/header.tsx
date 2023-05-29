@@ -32,7 +32,7 @@ const MenuList = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
   margin: 0;
   padding: 0;
