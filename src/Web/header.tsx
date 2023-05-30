@@ -1,6 +1,13 @@
 import styled from 'styled-components';
+import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 
 const HeaderWrapper = styled.div`
+
+  @font-face {
+    font-family: "FontTT" ;
+    src: url(${FontTT});
+  }
+
   display: flex;
   justify-content: space-between;
   background-color: transparent;
@@ -10,9 +17,10 @@ const HeaderWrapper = styled.div`
   padding: 0 1.8rem;
   align-items: center;
   box-sizing: border-box;
+  z-index: 2;
 
   span {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontTT', sans-serif;
     font-weight: 500;
   color: #fff;
   line-height: 1.7rem;
@@ -39,7 +47,7 @@ const MenuList = styled.ul`
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'FontTT', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
 

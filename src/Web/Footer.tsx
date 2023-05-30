@@ -1,7 +1,14 @@
 import { FacebookLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react';
 import styled from 'styled-components';
+import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 
 const FooterWrapper = styled.footer`
+  
+  @font-face {
+    font-family: "FontTT" ;
+    src: url(${FontTT });
+  }
+
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -23,7 +30,7 @@ const FooterUpperSection = styled.div`
   & p {
     font-size: 1rem;
     max-width: 400px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontTT', sans-serif;
     font-weight: 300;
     color: #c2c2c2;
 
@@ -31,7 +38,7 @@ const FooterUpperSection = styled.div`
 
   span {
   font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'FontTT', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
   }
@@ -44,7 +51,7 @@ const FeaturesWrapper = styled.div`
 
   & h4 {
     font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontTT', sans-serif;
     font-weight: 300;
     color: #c2c2c2
 
@@ -52,7 +59,7 @@ const FeaturesWrapper = styled.div`
 
   & p {
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontTT', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
   
@@ -67,7 +74,7 @@ const LegalLinksWrapper = styled.div`
 
   & h4 {
   font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'FontTT', sans-serif;
   font-weight: 400;
   color: #c2c2c2;
   }
@@ -77,7 +84,7 @@ const LegalLinksWrapper = styled.div`
     color: #b3b7d0;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontTT', sans-serif;
     font-weight: 300;
     color: #c2c2c2;
 
@@ -99,7 +106,7 @@ const Copyright = styled.p`
   font-size: 1rem;
   margin-top: 50px;
   color: #b3b7d0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'FontTT', sans-serif;
   font-weight: 300;
   line-height: 1.25rem;
   display: flex;

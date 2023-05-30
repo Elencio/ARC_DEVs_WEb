@@ -9,6 +9,7 @@ import { WhyChooseIntellifinanceSection } from "./Web/ChooseFillance";
 import { GetStartedTodaySection } from "./Web/Getstarted";
 import { Footer } from "./Web/Footer";
 import { FounderCard } from "./Web/FounderCard";
+import { MissionVision } from "./Web/Mission";
 
 
 
@@ -22,6 +23,7 @@ export function App(){
        <OurFeaturesSection />
        <HowItWorksSection />
        <WhyChooseIntellifinanceSection />
+       <MissionVision />
        <FounderCard />
        <GetStartedTodaySection />
        <Footer />

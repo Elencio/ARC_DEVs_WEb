@@ -1,29 +1,57 @@
 import styled from 'styled-components';
 import Image from "../assets/image.svg";
 import Imagegreen from "../assets/imagegreen.svg";
+import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
+import FonMon from "../fonts/momcake-font/MomcakeBold-WyonA.otf"
+import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 
 const RobotSectionWrapper = styled.div`
+  
+  @font-face {
+    font-family: "FontSpart" ;
+    src: url(${FontSpart});
+  }
+
+  @font-face {
+    font-family: "FontTT" ;
+    src: url(${FontTT});
+  }
+    
+  @font-face {
+    font-family: "FontMon" ;
+    src: url(${FonMon});
+  }
+
+
+
+
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 180px 0;
   border-radius: 50px 0 0 50px;
-
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  transition: opacity 1.2s cubic-bezier(.25,.46,.45,.94),transform 1.2s cubic-bezier(.25,.46,.45,.94);
+  will-change: opacity,transform;
 
   & h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontMon', sans-serif;
     font-weight: 500;
+    line-height: 1.7;
     color: #ffffff;
   }
 
   & p {
     font-size: 1.1rem;
     margin-bottom: 80px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontTT', sans-serif;
     line-height: 1.7rem;
     font-weight: 300;
+    letter-spacing: 0.1rem;
     color: #d0c6c6;
     text-align: center;
   }
@@ -84,7 +112,7 @@ const RobotSectionWrapper = styled.div`
 `;
 
 
-const KeywordsWrapper = styled.div`
+export const KeywordsWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,11 +122,11 @@ const KeywordsWrapper = styled.div`
 
   & p {
     margin: 25px 27px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     border-radius: 5px;
     padding: 0.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontSpart', sans-serif;
     font-weight: 300;
  
   }

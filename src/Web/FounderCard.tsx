@@ -1,6 +1,15 @@
 import styled from 'styled-components';
+import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 
 const CardContainer = styled.div`
+
+@font-face {
+  font-family: "FontTT" ;
+  src: url(${FontTT});
+}
+
+
+
 margin-top: 3rem;
 margin-bottom: 3rem;
 padding-bottom: 3rem;
@@ -24,7 +33,7 @@ const FounderName = styled.h2`
 
   margin-top: 10px;
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'FontTT', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
 `;
@@ -34,7 +43,7 @@ const FounderPosition = styled.h3`
   margin-top: 5px;
   color: #777;
   font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'FontTT', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
 `;
@@ -46,7 +55,7 @@ const FounderDescription = styled.p`
   margin-top: 10px;
   color: #a8b3cf;
   font-size: 1rem;
-  font-family: 'Ysabeau', sans-serif;
+  font-family: 'FontTT', sans-serif;
   font-weight: 300;
  
 `;

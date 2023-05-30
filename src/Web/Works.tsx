@@ -1,6 +1,28 @@
 import styled from 'styled-components';
+import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
+import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
+import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 
 const HowItWorksSectionWrapper = styled.div`
+
+
+  @font-face {
+    font-family: "FontSpart" ;
+    src: url(${FontSpart});
+  }
+
+  @font-face {
+    font-family: "FontTT" ;
+    src: url(${FontTT});
+  }
+
+
+
+  @font-face {
+    font-family: "Fontmonk" ;
+    src: url(${FonMonK});
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +33,8 @@ const HowItWorksSectionWrapper = styled.div`
   & h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fontmonk', sans-serif;
+    line-height: 1.7;
     font-weight: 300;
     color: #c2c2c2;
   }
@@ -22,7 +45,7 @@ const HowItWorksSectionWrapper = styled.div`
     max-width: 600px;
     line-height: 1.7rem;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontSpart', sans-serif;
     font-weight: 300;
     color: #c2c2c2;
   }
@@ -66,8 +89,8 @@ const StepCard = styled.div`
     font-size: 1rem;
     margin-top: 20px;
     text-align: center;
-    line-height: 1.7rem;
-    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
+    font-family: 'FontTT', sans-serif;
     font-weight: 300;
     color: #c2c2c2;
     letter-spacing: 0.01rem;
@@ -79,7 +102,7 @@ export function HowItWorksSection(){
     <HowItWorksSectionWrapper>
       <h2>How it Works</h2>
       <p>
-        Our system is user-friendly and easy to use. Here's how it works:
+        Our system is user-friendly and easy to use. Here's how it works
       </p>
       <StepsWrapper>
         <StepCard>

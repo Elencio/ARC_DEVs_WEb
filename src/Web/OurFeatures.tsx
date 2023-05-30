@@ -1,7 +1,25 @@
 
 import styled from 'styled-components';
+import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
+import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
+import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
+
+  
+ 
+
 
 const OurFeaturesSectionWrapper = styled.div`
+
+@font-face {
+    font-family: "FontSpart" ;
+    src: url(${FontSpart});
+  }
+
+  @font-face {
+    font-family: "Fontmonk" ;
+    src: url(${FonMonK});
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +30,8 @@ const OurFeaturesSectionWrapper = styled.div`
   & h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fontmonk', sans-serif;
+    line-height: 1.7;
   font-weight: 300;
   color: #c2c2c2;
   line-height: 1.7rem;
@@ -25,7 +44,7 @@ const OurFeaturesSectionWrapper = styled.div`
     max-width: 600px;
     line-height: 1.7rem;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontSpart', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
   }
@@ -43,6 +62,12 @@ const FeaturesWrapper = styled.div`
 `;
 
 const FeatureCard = styled.div`
+
+@font-face {
+    font-family: "FontTT" ;
+    src: url(${FontTT});
+  }
+
   display: flex;
   gap:0.3rem;
   padding: 1rem;
@@ -75,7 +100,7 @@ const FeatureCard = styled.div`
     font-size: 1rem;
     text-align: center;
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontTT', sans-serif;
     font-weight: 300;
     color: #c2c2c2;
   }

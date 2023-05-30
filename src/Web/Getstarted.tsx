@@ -1,6 +1,15 @@
 import styled from 'styled-components';
+import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
 
 const GetStartedTodaySectionWrapper = styled.div`
+
+  @font-face {
+    font-family: "FontSpart" ;
+    src: url(${FontSpart});
+  }
+
+
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +30,8 @@ const GetStartedTodaySectionWrapper = styled.div`
     margin-bottom: 80px;
     max-width: 600px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontSpart', sans-serif;
+    letter-spacing: 0.001rem;
   font-weight: 300;
   color: #c2c2c2;
   }

@@ -1,6 +1,22 @@
 import styled from 'styled-components';
+import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
+import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
 
 const WhyChooseIntellifinanceSectionWrapper = styled.div`
+
+
+  @font-face {
+    font-family: "FontSpart" ;
+    src: url(${FontSpart});
+  }
+
+  
+  @font-face {
+    font-family: "Fontmonk" ;
+    src: url(${FonMonK});
+  }
+
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +26,8 @@ const WhyChooseIntellifinanceSectionWrapper = styled.div`
   & h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fontmonk', sans-serif;
+    line-height: 1.7;
   font-weight: 300;
   color: #c2c2c2;
   }
@@ -21,7 +38,7 @@ const WhyChooseIntellifinanceSectionWrapper = styled.div`
     line-height: 1.7rem;
     max-width: 600px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'FontSpart', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
   }
@@ -36,13 +53,13 @@ const ButtonsWrapper = styled.div`
   & button {
     padding: 12px 25px;
     margin: 0 20px;
-    background-color: #8257e5;
+    background-color: #6542b5;
     font-family: 'Roboto', sans-serif;
-    box-shadow: 0 0 0 0.5px #c2c2c2;
+    box-shadow: 0 0 0 0.1px #c2c2c2;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     font-weight: 500;
-    color: white;
+    color: #c4c4cc;
     cursor: pointer;
     transition: all 0.3s ease;
   }
