@@ -82,7 +82,7 @@ export function MissionVision(){
        <img src={Imagem} alt="" className='Image'/>
       <Text>
         <KeywordsWrapper>
-        Nossa missão é fornecer <p>soluções de desenvolvimento</p> de sistemas <p>escaláveis e inovadoras</p> para empresas, impulsionadas pela mais recente tecnologia. Nosso objetivo é capacitar as empresas a alcançarem maior eficiência operacional, automação de processos e <p>melhor experiência para seus usuários finais</p>.
+        Nossa missão é fornecer <p>soluções de desenvolvimento</p> de sistemas <p>escaláveis e inovadoras</p> para empresas, impulsionadas pela mais recente tecnologia. Nosso objetivo é capacitar as empresas a alcançarem maior eficiência operacional, automação de processos e <p>melhor experiência</p> para seus usuários finais.
         Nossa visão é nos tornarmos <p>líderes reconhecidos</p> no mercado global de <p>desenvolvimento de sistemas</p>, estabelecendo parcerias duradouras com empresas de diversos setores. Queremos ser a escolha preferida das organizações que buscam soluções <p>personalizadas e eficientes</p> para suas necessidades tecnológicas.
         </KeywordsWrapper>
       </Text>
