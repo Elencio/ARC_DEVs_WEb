@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Imagem from "../assets/FOTO.png"
+import Imagem from "../assets/FOTO.svg"
 import FonTTT from "../fonts/Font files/otf-files/TT Norms Std Condensed Regular.otf"
 import { KeywordsWrapper } from './RobotSection';
 import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
@@ -8,10 +8,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: initial;
-  background-image: radial-gradient(87% 50% at 50% -38%,rgba(255,255,255,.05) 77.5%,rgba(255,255,255,.016) 88.13%,rgba(255,255,255,0) 100%),radial-gradient(97% 109% at 48% 0,rgba(0,0,0,.07) 0,rgba(61, 76, 91, 0.4) 100%);
 
-
- 
   @font-face {
     font-family: "FonMonK";
     src: url(${FonMonK});
