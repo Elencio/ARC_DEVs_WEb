@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
+import { NavLink } from 'react-router-dom';
 
 const GetStartedTodaySectionWrapper = styled.div`
 
@@ -50,6 +51,23 @@ const GetStartedTodaySectionWrapper = styled.div`
   }
 `;
 
+const StyledButton = styled.button`
+  background-color: #1c9cea;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #1472b0;
+  }
+
+  /* Remove underline on the text */
+  text-decoration: none;
+`;
+
 export function GetStartedTodaySection(){
   return (
     <GetStartedTodaySectionWrapper>
@@ -57,7 +75,9 @@ export function GetStartedTodaySection(){
       <p>
         Start managing your finances more efficiently and effectively with ARC-DEVs today.
       </p>
-      <button>Open Your Account</button>
+      <NavLink to="/Contact">
+      <StyledButton>Hire us</StyledButton>
+    </NavLink>
     </GetStartedTodaySectionWrapper>
   );
 }

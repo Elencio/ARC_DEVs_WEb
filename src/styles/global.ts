@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
   :focus {
     outline: none;
-    box-shadow: 0 0 0 0.5px #0072C6;
+    box-shadow: 0 0 0 0.8px #0072C6;
   }
 
   body {

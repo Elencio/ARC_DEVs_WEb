@@ -9,11 +9,8 @@ const Wrapper = styled.div`
   align-items: center;
   background-color: initial;
   background-image: radial-gradient(87% 50% at 50% -38%,rgba(255,255,255,.05) 77.5%,rgba(255,255,255,.016) 88.13%,rgba(255,255,255,0) 100%),radial-gradient(97% 109% at 48% 0,rgba(0,0,0,.07) 0,rgba(61, 76, 91, 0.4) 100%);
-border-radius: 28px;
-box-shadow: rgba(255, 255, 255, 0.1) 0 0 0 1px inset;
 
-  border-radius: 28px;
-  box-shadow: rgba(255, 255, 255, 0.1) 0 0 0 1px inset;
+
  
   @font-face {
     font-family: "FonMonK";
