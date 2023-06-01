@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Imagem from "../assets/FOTO.svg"
 import FonTTT from "../fonts/Font files/otf-files/TT Norms Std Condensed Regular.otf"
 import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
-import Imagem2 from "../assets/imagem2.svg"
 
 const Wrapper = styled.div`
   display: flex;
