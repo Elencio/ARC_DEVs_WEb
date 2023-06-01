@@ -1,87 +1,90 @@
 import styled from 'styled-components';
 import Imagem from "../assets/FOTO.svg"
 import FonTTT from "../fonts/Font files/otf-files/TT Norms Std Condensed Regular.otf"
-import { KeywordsWrapper } from './RobotSection';
 import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
+import Imagem2 from "../assets/imagem2.svg"
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: initial;
+  font-family: "FonMonK", sans-serif;
 
   @font-face {
     font-family: "FonMonK";
     src: url(${FonMonK});
   }
 
-
   @font-face {
     font-family: "FonTT";
     src: url(${FonTTT});
   }
-
 `;
 
-const Heading = styled.h2`
-   font-size: 2.5rem;
-    margin-top : 50px;
-    font-family: 'Fontmonk', sans-serif;
-    line-height: 1.7;
-  font-weight: 300;
-  color: #c4c4c4;
-  line-height: 1.7rem;
-`;
-
-const Text = styled.p`
-  font-size: 1.1rem;
-  text-align: start;
+const Text = styled.div`
+  font-size: 1.2rem;
+  text-align: center;
   margin-bottom: 30px;
-  color: #fff;
-  font-family: "FonTT", sans-serif;
-  line-height: 1.5rem;
-  letter-spacing: 0.03rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #c4c4c4;
+  font-family: "FonTTT", sans-serif;
+  line-height: 1.8rem;
+  letter-spacing: 0.06rem;
+  border-radius: 10px;
+
+  p {
+    box-shadow: 0 0 0 0.1px;
+  }
+
+  p:nth-of-type(odd) {
+    color: #4863f7;
+    box-shadow-color: #4863f7;
+    width: 400px;
+    align-items: center;
+  }
+
+  p:nth-of-type(even) {
+    color: #04d361;
+    box-shadow-color: #04d361;
+    width: 400px;
+  }
 `;
 
-export const ContainerContent = styled.div `
-padding: 6rem;
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 2rem;
+const ContainerContent = styled.div`
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+  background-image: radial-gradient(87% 50% at left top,  #2a3858 0.5%, rgb(23, 25, 31) 88.13%, rgba(255, 255, 255, 0) 100%), radial-gradient(97% 109% at 48% 20%, rgb(23, 25, 31) 0, rgb(23, 25, 31) 100%);
+`;
 
-
-.Image {
+const Image = styled.img`
   width: 600px;
   border-radius: 10px;
   left: -24px;
-  animation: slideImage 1s ease-in-out infinite alternate; /* Animation property */
-}
+`;
 
-@keyframes slideImage {
-  from {
-    transform: translateX(0px); /* Starting position */
-  }
-  to {
-    transform: translateX(20px); /* Ending position */
-  }
-}
-`
-
-
-export function MissionVision(){
+export function MissionVision() {
   return (
     <Wrapper>
-      <Heading>Nossa missão e visão</Heading>
       <ContainerContent>
-       <img src={Imagem} alt="" className='Image'/>
-      <Text>
-        <KeywordsWrapper>
-        Nossa missão é fornecer <p>soluções de desenvolvimento</p> de sistemas <p>escaláveis e inovadoras</p> para empresas, impulsionadas pela mais recente tecnologia. Nosso objetivo é <p>capacitar as empresas</p> a alcançarem maior eficiência operacional, automação de processos e <p>melhor experiência</p> para seus usuários finais.
-        Nossa visão é nos tornarmos <p>líderes reconhecidos</p> no mercado global de <p>desenvolvimento de sistemas</p>, estabelecendo parcerias duradouras com empresas de diversos setores. Queremos ser a escolha preferida das organizações que buscam soluções <p>personalizadas e eficientes</p> para suas necessidades tecnológicas.
-        </KeywordsWrapper>
-      </Text>
+        <Image src={Imagem} alt="" />
+        <Text>
+          A Startup tem como missão fornecer 
+          <p>soluções escaláveis e inovadoras </p>
+          de desenvolvimento de sistemas para empresas, visando melhorar a 
+          <p>eficiência operacional</p> e experiência do usuário final. 
+          A visão da empresa é se tornar líder no mercado global de 
+          <p>desenvolvimento de sistemas </p>
+          e ser a escolha preferida de organizações que buscam 
+          <p>soluções eficientes e personalizadas.</p>
+        </Text>
       </ContainerContent>
     </Wrapper>
   );
 }
-

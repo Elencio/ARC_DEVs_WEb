@@ -31,10 +31,10 @@ const HowItWorksSectionWrapper = styled.div`
   background-image: radial-gradient(circle closest-corner at 50% 50%, rgba(34, 33, 65, 0.24), rgba(0, 2, 18, 0) 10%);
 
   & h2 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     margin-bottom: 50px;
-    font-family: 'Fontmonk', sans-serif;
-    line-height: 1.7;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7rem;
     font-weight: 300;
     color: #c2c2c2;
   }
@@ -45,7 +45,7 @@ const HowItWorksSectionWrapper = styled.div`
     max-width: 600px;
     line-height: 1.7rem;
     text-align: center;
-    font-family: 'FontSpart', sans-serif;
+    font-family: 'FontTT', sans-serif;
     font-weight: 300;
     color: #c2c2c2;
   }

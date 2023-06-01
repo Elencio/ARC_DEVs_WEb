@@ -4,6 +4,7 @@ import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
 import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
 
+
   
  
 
@@ -30,7 +31,7 @@ const OurFeaturesSectionWrapper = styled.div`
   & h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    font-family: 'Fontmonk', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.7;
   font-weight: 300;
   color: #c2c2c2;
@@ -44,7 +45,7 @@ const OurFeaturesSectionWrapper = styled.div`
     max-width: 600px;
     line-height: 1.7rem;
     text-align: center;
-    font-family: 'FontSpart', sans-serif;
+    font-family: 'FontTT', sans-serif;
   font-weight: 300;
   color: #c2c2c2;
   }

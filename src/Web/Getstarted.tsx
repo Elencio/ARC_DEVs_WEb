@@ -1,12 +1,18 @@
 import styled from 'styled-components';
 import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
 import { NavLink } from 'react-router-dom';
+import FonTTT from "../fonts/Font files/otf-files/TT Norms Std Condensed Regular.otf"
 
 const GetStartedTodaySectionWrapper = styled.div`
 
   @font-face {
     font-family: "FontSpart" ;
     src: url(${FontSpart});
+  }
+
+  @font-face {
+    font-family: "FonTTT" ;
+    src: url(${FonTTT});
   }
 
 
@@ -19,7 +25,7 @@ const GetStartedTodaySectionWrapper = styled.div`
   margin-bottom: 2rem;
 
   & h2 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -31,37 +37,28 @@ const GetStartedTodaySectionWrapper = styled.div`
     margin-bottom: 80px;
     max-width: 600px;
     text-align: center;
-    font-family: 'FontSpart', sans-serif;
+    font-family: 'FonTTT', sans-serif;
     letter-spacing: 0.001rem;
+    line-height: 1.7rem;
   font-weight: 300;
   color: #c2c2c2;
-  }
-
-  button {
-    padding: 12px 25px;
-    margin: 0 20px;
-    background-color: #8257e5;
-    font-family: 'Roboto' sans-serif;
-    border: none;
-    border-radius: 30px;
-    font-weight: 500;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
   }
 `;
 
 const StyledButton = styled.button`
-  background-color: #1c9cea;
+  background-color: transparent;
   padding: 0.8rem 1.5rem;
+  font-family: 'Roboto' sans-serif;
   border: none;
   border-radius: 0.5rem;
-  color: #fff;
+  color: #8257e5;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 0 0 0 0.5px #8257e5;
 
   &:hover {
-    background-color: #1472b0;
+    background-color: #8257e5;
+    color: #fff;
   }
 
   /* Remove underline on the text */

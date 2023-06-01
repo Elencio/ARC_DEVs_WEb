@@ -68,22 +68,46 @@ const TagsContainer = styled.div`
   font-size: 1rem;
   color: #9b59b6;
   box-shadow: 0 0 0 0.1px #9b59b6;
+  transition: background-color 0.3s ease;
+  
+
+  &:hover {
+    background-color:  #9b59b6;
+    color: #fff;
+  }
  } 
   
 
   span:nth-of-type(1) {
   color: #34495e;
   box-shadow: 0 0 0 0.1px #34495e;
+
+  &:hover {
+    background-color: #34495e;
+    color: #fff;
+  }
 }
 
 span:nth-of-type(2) {
   color:  #e67e22;
   box-shadow: 0 0 0 0.1px  #e67e22;
+
+  &:hover {
+    background-color:  #e67e22;
+    color: #fff;
+  }
+  
 }
 
 span:nth-of-type(3) {
   color: #c0392b;
   box-shadow: 0 0 0 0.1px #c0392b;
+
+
+  &:hover {
+    background-color:  #c0392b;
+    color: #fff;
+  }
 }
 `;
 
@@ -125,7 +149,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-  box-shadow: 0 0 0 0.1px #1c9cea;
+  box-shadow: 0 0 0 0.2px #1c9cea;
   background-color: transparent;
   padding: 0.8rem 2rem;
   border: none;
