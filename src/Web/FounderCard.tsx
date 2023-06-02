@@ -97,6 +97,7 @@ font-family: "FonTT", sans-serif;
 const Card = styled.div`
 display: flex;
 flex-wrap: wrap;
+padding: 2rem;
 gap: 1.9rem;
 justify-content: center;
 `;
