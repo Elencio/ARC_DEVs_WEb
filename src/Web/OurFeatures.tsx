@@ -187,7 +187,7 @@ export const ContainerGrid = styled.div`
     position: absolute;
     left: 1px;
     top: 5px;
-    width: 464px;
+    width: 458px;
     opacity: .03;
   }
   
