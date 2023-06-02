@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   justify-content: center;
   justify-content: space-between;
   background-color: transparent;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 
   a {
     color: #fff;
