@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import FontTT from '../fonts/Font files/otf-files/TT Tricks Regular.otf';
+import logo from "../assets/default-monochrome.svg"
 
 const HeaderWrapper = styled.div`
   @font-face {
@@ -12,12 +13,13 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   background-color: transparent;
   position: fixed;
-  background-color: transparent;
+  background-color: #230c5b;
   width: 100%;
   padding: 0 1.8rem;
   align-items: center;
   box-sizing: border-box;
   z-index: 2;
+  border-bottom: 1px solid #564898;
 
   span {
     font-family: 'FontTT', sans-serif;
@@ -25,6 +27,10 @@ const HeaderWrapper = styled.div`
     color: #fff;
     line-height: 1.7rem;
     font-size: 1.2rem;
+  }
+
+  img {
+    width: 170px;
   }
 `;
 
@@ -51,7 +57,7 @@ const MenuList = styled.ul<{ isMenuOpen: boolean }>`
   font-size: 1rem;
   font-family: 'FontTT', sans-serif;
   font-weight: 300;
-  color: #c2c2c2;
+  color: #dfdfdf;
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
@@ -75,17 +81,16 @@ const MenuList = styled.ul<{ isMenuOpen: boolean }>`
 `;
 
 const MenuItem = styled.li`
-  margin: 0px;
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-family: 'FontTT', sans-serif;
   font-weight: 300;
-  color: #c2c2c2;
+  color: #dfdfdf;
   padding: 2rem;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
 
   &:hover {
-    border-bottom: 3px solid #7800fd;
+    border-bottom: 3px solid #04d361;
   }
 
   @media only screen and (max-width: 768px) {
@@ -118,7 +123,7 @@ export function Header() {
 
   return (
     <HeaderWrapper>
-      <span>ARC-DEVs</span>
+     <img src={logo} alt="" />
       <Navigation>
         <NavToggle onClick={toggleMenu} hasFocus={isMenuOpen}>
           {isMenuOpen ? 'Close' : 'Menu'}

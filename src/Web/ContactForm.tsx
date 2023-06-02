@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
+import logo from "../assets/default-monochrome.svg"
 
 
 const ContactFormContainer = styled.div`
@@ -39,6 +40,10 @@ const ContactFormContainer = styled.div`
 
   form {
     width: 600px;
+  }
+
+  img {
+    width: 160px;
   }
 `;
 
@@ -181,7 +186,7 @@ export function ContactForm(){
 
   return (
     <ContactFormContainer>
-      <h2>ARC-DEVs</h2>
+      <img src={logo} alt="" />
       <Description>Entre em contato conosco</Description>
       <TagsContainer>
         <span>Designer</span>

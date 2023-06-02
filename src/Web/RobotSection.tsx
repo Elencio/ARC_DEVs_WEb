@@ -39,24 +39,22 @@ const RobotSectionWrapper = styled.div`
   & h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    font-family: 'FontMon', sans-serif;
+    font-family: 'FontTT', sans-serif;
     font-weight: 500;
     line-height: 1.7;
     color: #ffffff;
     text-align: center;
-   filter: url(#noise);
-   background: radial-gradient(ellipse at -100% -50%,#4863f7,#7803ff,#04d361);
-   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+
   }
 
   & p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 80px;
     font-family: 'FontTT', sans-serif;
-    line-height: 1.7rem;
+    line-height: 2rem;
     font-weight: 300;
-    letter-spacing: 0.1rem;
+    letter-spacing: 1.25%;
     color: #d0c6c6;
     text-align: center;
   }
@@ -127,43 +125,43 @@ export const KeywordsWrapper = styled.div`
 
   & p {
     margin: 25px 27px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
     padding: 0.5rem;
-    font-family: 'FontSpart', sans-serif;
+    font-family: 'FontTT', sans-serif;
     font-weight: 300;
  
   }
 
   p:nth-of-type(1) {
   color: #4863f7;
-  box-shadow: 0 0 0 0.1px #4863f7;
+  box-shadow: 0 0 0 0.3px #4863f7;
 }
 
 p:nth-of-type(2) {
   color: #04d361;
-  box-shadow: 0 0 0 0.1px #04d361;
+  box-shadow: 0 0 0 0.3px #04d361;
 }
 
 p:nth-of-type(3) {
   color: #4863f7;
-  box-shadow: 0 0 0 0.1px #4863f7;
+  box-shadow: 0 0 0 0.3px #4863f7;
 }
 
 p:nth-of-type(4) {
   color: #04d361;
-  box-shadow: 0 0 0 0.1px #04d361;
+  box-shadow: 0 0 0 0.3px #04d361;
 }
 
 p:nth-of-type(5) {
   color: #4863f7;
-  box-shadow: 0 0 0 0.1px #4863f7;
+  box-shadow: 0 0 0 0.3px #4863f7;
 }
 
 p:nth-of-type(6) {
   color: #04d361;
-  box-shadow: 0 0 0 0.1px #04d361;
+  box-shadow: 0 0 0 0.3px #04d361;
 }
 `;
 

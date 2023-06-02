@@ -1,15 +1,70 @@
 import styled from 'styled-components';
+import FonTTT from "../fonts/Font files/otf-files/TT Norms Std Condensed Regular.otf"
+import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
+import { GithubIcon, TwitterIcon } from '@mantine/ds';
+import { LinkedinLogo } from 'phosphor-react';
+
+
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 2rem 1rem;
+
+  a {
+    color: #fff;
+   
+    box-shadow: 0 0 0 0.2px #8b8787;
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #121212;
+    background-color: #dfdfdf;
+  }
+`;
+
+const Link = styled.a`
+  margin-right: 1rem;
+`;
+
+
+
+
 
 const CardContainer = styled.div`
 margin-top: 3rem;
 margin-bottom: 3rem;
 padding-bottom: 3rem;
-gap: 0.3rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 300px;
+gap: 0.2rem;
 border-bottom: 1px solid #4863f7;
 display: flex;
 flex-direction: column;
 align-items: center;
 border-radius: 20px;
+
+@font-face {
+    font-family: "FonMonK";
+    src: url(${FonMonK});
+  }
+
+  @font-face {
+    font-family: "FonTT";
+    src: url(${FonTTT});
+  }
 `;
 
 const FounderImage = styled.img`
@@ -20,27 +75,24 @@ border-radius: 50%;
 
 const FounderName = styled.h2`
 margin-top: 10px;
-font-size: 1rem;
+font-size: 1.1rem;
 font-weight: 300;
-color: #c2c2c2;
+line-height: 1.7;
+letter-spacing: 1.25%;
+color: #dfdfdf;
+font-family: "FonTT", sans-serif;
 `;
 
 const FounderPosition = styled.h3`
 font-size: 1.2rem;
 margin-top: 5px;
-color: #777;
-font-weight: 300;
-color: #c2c2c2;
+font-weight: bold;
+
+color: #dfdfdf;
+font-family: "FonTT", sans-serif;
 `;
 
-const FounderDescription = styled.p`
-font-size: 1rem;
-line-height: 1.5;
-text-align: center;
-margin-top: 10px;
-color: #a8b3cf;
-font-weight: 300;
-`;
+
 
 const Card = styled.div`
 display: flex;
@@ -50,16 +102,15 @@ justify-content: center;
 `;
 
 const Container = styled.div`
-padding: 8rem 2rem;
+padding: 5rem 0rem;
 display: flex;
 flex-direction: column;
 gap: 2rem;
 align-items: center;
 justify-content: center;
 text-align: center;
-background-image: radial-gradient(87% 40% at 50% 130%, #221b49 77.5%, rgba(255, 255, 255, .016) 88.13%, rgba(255, 255, 255, 0) 100%), radial-gradient(107% 109% at 48% 20%, rgba(0, 0, 0, 0.07) 0, rgba(25, 28, 26, 0.4) 100%);
-z-index: -1;
-color: #f5e4e4;
+
+color: #dfdfdf;
 
 h1 {
   font-size: 1.6rem;
@@ -69,7 +120,7 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-  text-transform: uppercase;
+  font-family: "FonTT", sans-serif;
 }
 `;
 
@@ -77,36 +128,79 @@ export function FounderCard() {
   return (
     <Container>
       <h1>Meet Our Team</h1>
-    <Card>
+      <Card>
 
-      <CardContainer>
-        <FounderImage src="https://media.licdn.com/dms/image/D4D03AQFNDBZmh3OM5g/profile-displayphoto-shrink_200_200/0/1683651610619?e=1691020800&v=beta&t=PdGHUdEKauP6NR0pjhyFTraDkiLr8EI2dIhc8FkTO68" alt="" />
-        <FounderName>Antonio Uamba</FounderName>
-        <FounderPosition>Engenheiro de Dados</FounderPosition>
-        <FounderDescription>Estudante de Engenharia da Computação</FounderDescription>
-      </CardContainer>
+        <CardContainer>
+          <FounderImage src="https://media.licdn.com/dms/image/D4D03AQFNDBZmh3OM5g/profile-displayphoto-shrink_200_200/0/1683651610619?e=1691020800&v=beta&t=PdGHUdEKauP6NR0pjhyFTraDkiLr8EI2dIhc8FkTO68" alt="" />
+          <FounderName>Antonio Uamba</FounderName>
+          <FounderPosition>Date Engineer</FounderPosition>
+          <Wrapper>
+            <Link href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <GithubIcon size={22}/>
+            </Link>
+            <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <LinkedinLogo size={26}/>
+            </Link>
+            <Link href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <TwitterIcon size={22}/>
+            </Link>
+          </Wrapper>
+        </CardContainer>
 
-      <CardContainer>
-        <FounderImage src="https://media.licdn.com/dms/image/D4D03AQHgEhv-rlyA1w/profile-displayphoto-shrink_200_200/0/1668127848711?e=1691020800&v=beta&t=3XNjFz4HX53TTzgKHYACdWj-LW6CTyhvVTFZb7Tv6kc" alt="" />
-        <FounderName>Edilson Cuambe</FounderName>
-        <FounderPosition>Desenvolvedor Backend</FounderPosition>
-        <FounderDescription>Estudante de Engenharia da Computação</FounderDescription>
-      </CardContainer>
+        <CardContainer>
+          <FounderImage src="https://media.licdn.com/dms/image/D4D03AQHgEhv-rlyA1w/profile-displayphoto-shrink_200_200/0/1668127848711?e=1691020800&v=beta&t=3XNjFz4HX53TTzgKHYACdWj-LW6CTyhvVTFZb7Tv6kc" alt="" />
+          <FounderName>Edilson Cuambe</FounderName>
+          <FounderPosition>Desenvolvedor Backend</FounderPosition>
 
-      <CardContainer>
-        <FounderImage src="https://media.licdn.com/dms/image/D4D03AQH0cx69Lz0XGA/profile-displayphoto-shrink_200_200/0/1683208530627?e=1691020800&v=beta&t=teDcSXTmdIOL8n4IfH0DDcRT2kLWOrWS6w4H2Y2QeLU" alt="" />
-        <FounderName>Elencio Zivane</FounderName>
-        <FounderPosition>Frontend Developer UI/UX</FounderPosition>
-        <FounderDescription>Estudante de Engenharia da Computação</FounderDescription>
-      </CardContainer>
+          <Wrapper>
+            <Link href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <GithubIcon size={22}/>
+            </Link>
+            <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <LinkedinLogo size={26}/>
+            </Link>
+            <Link href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <TwitterIcon size={22}/>
+            </Link>
+          </Wrapper>
+        </CardContainer>
 
-      <CardContainer>
-        <FounderImage src="https://media.licdn.com/dms/image/C4D03AQFWznBu37D1rA/profile-displayphoto-shrink_200_200/0/1640373473179?e=1691020800&v=beta&t=geRJhJn2dvvPjPgtogx5QjZJqy0mY2RNYCXb1nti6fA" alt="" />
-        <FounderName>Gervasio Dombo</FounderName>
-        <FounderPosition>Fullstack Developer</FounderPosition>
-        <FounderDescription>Estudante de Engenharia de Software</FounderDescription>
-      </CardContainer>
-    </Card>
+        <CardContainer>
+          <FounderImage src="https://media.licdn.com/dms/image/D4D03AQH0cx69Lz0XGA/profile-displayphoto-shrink_200_200/0/1683208530627?e=1691020800&v=beta&t=teDcSXTmdIOL8n4IfH0DDcRT2kLWOrWS6w4H2Y2QeLU" alt="" />
+          <FounderName>Elencio Zivane</FounderName>
+          <FounderPosition>Frontend Developer UI/UX</FounderPosition>
+
+          <Wrapper>
+            <Link href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <GithubIcon size={22}/>
+            </Link>
+            <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <LinkedinLogo size={24}/>
+            </Link>
+            <Link href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <TwitterIcon size={22}/>
+            </Link>
+          </Wrapper>
+        </CardContainer>
+
+        <CardContainer>
+          <FounderImage src="https://media.licdn.com/dms/image/C4D03AQFWznBu37D1rA/profile-displayphoto-shrink_200_200/0/1640373473179?e=1691020800&v=beta&t=geRJhJn2dvvPjPgtogx5QjZJqy0mY2RNYCXb1nti6fA" alt="" />
+          <FounderName>Gervasio Dombo</FounderName>
+          <FounderPosition>Fullstack Developer</FounderPosition>
+
+          <Wrapper>
+            <Link href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <GithubIcon size={22}/>
+            </Link>
+            <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <LinkedinLogo size={26}/>
+            </Link>
+            <Link href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <TwitterIcon size={22}/>
+            </Link>
+          </Wrapper>
+        </CardContainer>
+      </Card>
     </Container>
   );
 }

@@ -48,18 +48,19 @@ const GetStartedTodaySectionWrapper = styled.div`
 
 const StyledButton = styled.button`
   background-color: transparent;
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 5rem;
   font-family: 'Roboto' sans-serif;
   border: none;
+  font-size: 1.1rem;
   border-radius: 0.5rem;
-  color: #8257e5;
+  color: #dfdfdf;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  box-shadow: 0 0 0 0.5px #8257e5;
+  box-shadow: 0 0 0 0.5px #e5e7eb;
 
   &:hover {
-    background-color: #8257e5;
-    color: #fff;
+    background-color: #34d399;
+    color: #121212;
   }
 
   /* Remove underline on the text */
