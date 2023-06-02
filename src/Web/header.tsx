@@ -1,10 +1,10 @@
+import { useState } from 'react';
 import styled from 'styled-components';
-import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
+import FontTT from '../fonts/Font files/otf-files/TT Tricks Regular.otf';
 
 const HeaderWrapper = styled.div`
-
   @font-face {
-    font-family: "FontTT" ;
+    font-family: 'FontTT';
     src: url(${FontTT});
   }
 
@@ -12,7 +12,7 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   background-color: transparent;
   position: fixed;
-  background-color: #23252780;
+  background-color: transparent;
   width: 100%;
   padding: 0 1.8rem;
   align-items: center;
@@ -22,23 +22,25 @@ const HeaderWrapper = styled.div`
   span {
     font-family: 'FontTT', sans-serif;
     font-weight: 500;
-  color: #fff;
-  line-height: 1.7rem;
-  font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
   }
 `;
-
-
 
 const Navigation = styled.nav`
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap:2rem;
+  gap: 2rem;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 1rem;
+  }
 `;
 
-
-const MenuList = styled.ul`
+const MenuList = styled.ul<{ isMenuOpen: boolean }>`
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -54,13 +56,21 @@ const MenuList = styled.ul`
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     position: absolute;
-    top: 100px;
+    top: 3.5rem;
     left: 0;
     width: 100%;
-    background-color: #303146;
+    background-color: #051f4280;
     text-align: center;
     transition: all 0.5s ease-in-out;
-    transform: translateY(-150);
+
+    ${({ isMenuOpen }) =>
+      isMenuOpen
+        ? `
+          transform: translateY(0);
+        `
+        : `
+          transform: translateY(-150%);
+        `}
   }
 `;
 
@@ -71,15 +81,11 @@ const MenuItem = styled.li`
   font-weight: 300;
   color: #c2c2c2;
   padding: 2rem;
-
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
 
   &:hover {
-  
-
-  border-bottom: 3px solid #7800fd;
-
+    border-bottom: 3px solid #7800fd;
   }
 
   @media only screen and (max-width: 768px) {
@@ -88,39 +94,41 @@ const MenuItem = styled.li`
   }
 `;
 
-const OpenAccountButton = styled.button`
-  padding: 12px 24px;
-  background-color: #303146;
+const NavToggle = styled.button<{ hasFocus: boolean }>`
   border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 0 0.1px #c2c2c2;
-  font-weight: 500;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #c2c2c2;
-  font-size: 0.8rem;
+  background: none;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: ${({ hasFocus }) => (hasFocus ? '#fff' : '#c2c2c2')};
 
-  &:hover {
-    background-color: #484d5b;
+  display: none;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
   }
 `;
 
-export function Header(){
-  
+export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prevOpen) => !prevOpen);
+  };
+
   return (
     <HeaderWrapper>
       <span>ARC-DEVs</span>
       <Navigation>
-        <MenuList >
+        <NavToggle onClick={toggleMenu} hasFocus={isMenuOpen}>
+          {isMenuOpen ? 'Close' : 'Menu'}
+        </NavToggle>
+        <MenuList isMenuOpen={isMenuOpen}>
           <MenuItem>Features</MenuItem>
           <MenuItem>Learn</MenuItem>
           <MenuItem>About</MenuItem>
           <MenuItem>Contact</MenuItem>
         </MenuList>
-        <OpenAccountButton>Open Account</OpenAccountButton>
       </Navigation>
     </HeaderWrapper>
   );

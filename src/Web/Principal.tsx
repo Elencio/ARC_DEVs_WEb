@@ -1,4 +1,3 @@
-import { Header } from "./header";
 import { RobotSection } from "./RobotSection";
 import { OurFeaturesSection } from "./OurFeatures";
 import { HowItWorksSection } from "./Works";
@@ -7,6 +6,8 @@ import { GetStartedTodaySection } from "./Getstarted";
 import { Footer } from "./Footer";
 import { FounderCard } from "./FounderCard";
 import { MissionVision } from "./Mission";
+import { Header } from "./header";
+
 
 
 

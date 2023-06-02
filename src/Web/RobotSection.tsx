@@ -43,6 +43,11 @@ const RobotSectionWrapper = styled.div`
     font-weight: 500;
     line-height: 1.7;
     color: #ffffff;
+    text-align: center;
+   filter: url(#noise);
+   background: radial-gradient(ellipse at -100% -50%,#4863f7,#7803ff,#04d361);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
 
   & p {

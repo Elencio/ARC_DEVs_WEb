@@ -3,6 +3,7 @@ import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
 import { NavLink } from 'react-router-dom';
 import FonTTT from "../fonts/Font files/otf-files/TT Norms Std Condensed Regular.otf"
 
+
 const GetStartedTodaySectionWrapper = styled.div`
 
   @font-face {

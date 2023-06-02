@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 const Text = styled.div`
   font-size: 1.2rem;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,39 +33,38 @@ const Text = styled.div`
   line-height: 1.8rem;
   letter-spacing: 0.06rem;
   border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 0 0.1px;
 
-  p {
-    box-shadow: 0 0 0 0.1px;
-  }
-
-  p:nth-of-type(odd) {
+  &:nth-of-type(odd) {
     color: #4863f7;
     box-shadow-color: #4863f7;
-    width: 400px;
     align-items: center;
   }
 
-  p:nth-of-type(even) {
+  &:nth-of-type(even) {
     color: #04d361;
     box-shadow-color: #04d361;
-    width: 400px;
   }
 `;
 
 const ContainerContent = styled.div`
-  padding: 4rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-  gap: 1rem;
-  background-image: radial-gradient(87% 50% at left top,  #2a3858 0.5%, rgb(23, 25, 31) 88.13%, rgba(255, 255, 255, 0) 100%), radial-gradient(97% 109% at 48% 20%, rgb(23, 25, 31) 0, rgb(23, 25, 31) 100%);
+  gap: 2rem;
+  background-image: radial-gradient(57% 80% at center top,  #2a3858 0.5%, rgb(23, 25, 31) 88.13%, rgba(255, 255, 255, 0) 100%), radial-gradient(97% 109% at 48% 20%, rgb(23, 25, 31) 0, rgb(23, 25, 31) 100%);
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin: 1rem;
+  }
 `;
 
 const Image = styled.img`
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   border-radius: 10px;
-  left: -24px;
 `;
 
 export function MissionVision() {
@@ -73,16 +72,14 @@ export function MissionVision() {
     <Wrapper>
       <ContainerContent>
         <Image src={Imagem} alt="" />
-        <Text>
-          A Startup tem como missão fornecer 
-          <p>soluções escaláveis e inovadoras </p>
-          de desenvolvimento de sistemas para empresas, visando melhorar a 
-          <p>eficiência operacional</p> e experiência do usuário final. 
-          A visão da empresa é se tornar líder no mercado global de 
-          <p>desenvolvimento de sistemas </p>
-          e ser a escolha preferida de organizações que buscam 
-          <p>soluções eficientes e personalizadas.</p>
-        </Text>
+        <div>
+          <Text>
+            A Startup tem como missão fornecer soluções escaláveis e inovadoras de desenvolvimento de sistemas para empresas, visando melhorar a eficiência operacional e experiência do usuário final. 
+          </Text>
+          <Text>
+            A visão da empresa é se tornar líder no mercado global de desenvolvimento de sistemas e ser a escolha preferida de organizações que buscam soluções eficientes e personalizadas.
+          </Text>
+        </div>
       </ContainerContent>
     </Wrapper>
   );

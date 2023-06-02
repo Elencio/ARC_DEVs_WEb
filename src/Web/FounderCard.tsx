@@ -2,14 +2,6 @@ import styled from 'styled-components';
 import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 
 const CardContainer = styled.div`
-
-@font-face {
-  font-family: "FontTT" ;
-  src: url(${FontTT});
-}
-
-
-
 margin-top: 3rem;
 margin-bottom: 3rem;
 padding-bottom: 3rem;
@@ -19,79 +11,75 @@ display: flex;
 flex-direction: column;
 align-items: center;
 border-radius: 20px;
-
-  
 `;
 
 const FounderImage = styled.img`
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+width: 180px;
+height: 180px;
+border-radius: 50%;
 `;
 
 const FounderName = styled.h2`
-
-  margin-top: 10px;
-  font-size: 1rem;
-  font-family: 'FontTT', sans-serif;
-  font-weight: 300;
-  color: #c2c2c2;
+margin-top: 10px;
+font-size: 1rem;
+font-weight: 300;
+color: #c2c2c2;
 `;
 
 const FounderPosition = styled.h3`
-  font-size: 18px;
-  margin-top: 5px;
-  color: #777;
-  font-size: 1.2rem;
-  font-family: 'FontTT', sans-serif;
-  font-weight: 300;
-  color: #c2c2c2;
+font-size: 1.2rem;
+margin-top: 5px;
+color: #777;
+font-weight: 300;
+color: #c2c2c2;
 `;
 
 const FounderDescription = styled.p`
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  margin-top: 10px;
-  color: #a8b3cf;
-  font-size: 1rem;
-  font-family: 'FontTT', sans-serif;
-  font-weight: 300;
- 
+font-size: 1rem;
+line-height: 1.5;
+text-align: center;
+margin-top: 10px;
+color: #a8b3cf;
+font-weight: 300;
 `;
 
-export const Card = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
-  grid-gap: 1rem;
-  align-items: center;
-`
-export const Container = styled.div`
-  padding: 8rem 4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-   
-   h1 {
-    font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+const Card = styled.div`
+display: flex;
+flex-wrap: wrap;
+gap: 1.9rem;
+justify-content: center;
+`;
+
+const Container = styled.div`
+padding: 8rem 2rem;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+align-items: center;
+justify-content: center;
+text-align: center;
+background-image: radial-gradient(87% 40% at 50% 130%, #221b49 77.5%, rgba(255, 255, 255, .016) 88.13%, rgba(255, 255, 255, 0) 100%), radial-gradient(107% 109% at 48% 20%, rgba(0, 0, 0, 0.07) 0, rgba(25, 28, 26, 0.4) 100%);
+z-index: -1;
+color: #f5e4e4;
+
+h1 {
+  font-size: 1.6rem;
   font-weight: 300;
-  color: #f5e4e4;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-   }
-   background-image: radial-gradient(87% 40% at 50% 130%, #221b49 77.5%, rgba(255, 255, 255, .016) 88.13%, rgba(255, 255, 255, 0) 100%), radial-gradient(107% 109% at 48% 20%, rgba(0, 0, 0, 0.07) 0, rgba(25, 28, 26, 0.4) 100%);
-   z-index: -1;
-
-`
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+`;
 
 export function FounderCard() {
   return (
     <Container>
       <h1>Meet Our Team</h1>
     <Card>
+
       <CardContainer>
         <FounderImage src="https://media.licdn.com/dms/image/D4D03AQFNDBZmh3OM5g/profile-displayphoto-shrink_200_200/0/1683651610619?e=1691020800&v=beta&t=PdGHUdEKauP6NR0pjhyFTraDkiLr8EI2dIhc8FkTO68" alt="" />
         <FounderName>Antonio Uamba</FounderName>
