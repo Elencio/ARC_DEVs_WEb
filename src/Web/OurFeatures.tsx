@@ -163,7 +163,7 @@ export const Leftalignedsection = styled.div`
 
 export const ContainerGrid = styled.div`
   display: flex;
-  padding: 1.5rem 7rem;
+  padding: 1.5rem 7.5rem;
   border-radius: 10px;
   background-color:  #111033;
   flex-direction: column;
