@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 
 const CardContainer = styled.div`
 margin-top: 3rem;

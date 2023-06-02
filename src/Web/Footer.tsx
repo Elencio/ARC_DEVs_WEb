@@ -1,6 +1,5 @@
 import { FacebookLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react';
 import styled from 'styled-components';
-import FontTT from '../fonts/Font files/otf-files/TT Tricks Regular.otf';
 
 const Container = styled.footer`
   display: flex;
