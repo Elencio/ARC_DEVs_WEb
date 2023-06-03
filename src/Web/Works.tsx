@@ -86,14 +86,7 @@ const CardWrapper = styled.div`
     text-align: start;
     font-family: 'FontTT', sans-serif;
     font-weight: bold;
-    background-image: linear-gradient(
-                  135deg,
-                  #4c60d1 100%,
-                  #10ef74 0%
-                
-                );
-   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    color: #7388fd;
   }
 
   & p {

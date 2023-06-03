@@ -7,7 +7,7 @@ const Container = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: #19194f;
+  background-color: rgba(28, 31,38,1);
   box-shadow: 0 0 0 0.1px #c2c2c2;
 `;
 

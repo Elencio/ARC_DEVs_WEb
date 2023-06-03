@@ -18,6 +18,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #120532;
+    background-color: rgb(18, 18, 20);
   }
 `

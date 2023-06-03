@@ -13,13 +13,13 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   background-color: transparent;
   position: fixed;
-  background-color: #230c5b;
+  background-color: #121214;
   width: 100%;
   padding: 0 1.8rem;
   align-items: center;
   box-sizing: border-box;
   z-index: 2;
-  border-bottom: 1px solid #564898;
+  box-shadow: 0 0 0 0.1px  #dfdfdf;
 
   span {
     font-family: 'FontTT', sans-serif;

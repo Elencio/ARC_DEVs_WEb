@@ -42,7 +42,8 @@ const ContainerHeader = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
   align-items: center;
-  background-color: #15043f;
+  background-color: rgba(28, 31,38,1);
+  box-shadow: 0 0 0 0.2px #dfdfdf;
   color: #dfdfdf;
   padding: 0 3rem;
   height: 380px;
@@ -51,17 +52,6 @@ const ContainerHeader = styled.div`
   position: relative;
 
 
-  &:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -2px;
-    background-image: linear-gradient(to right, #1637f3 30%, #644bf6 50%);
-    border-radius: inherit;
-  }
 `;
 
 const Text = styled.div`
@@ -69,7 +59,8 @@ const Text = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   align-items: center;
-  background-color:  #15043f;
+  background-color: rgba(28, 31,38,1);
+  box-shadow: 0 0 0 0.2px #dfdfdf;
   color: #dfdfdf;
   padding: 10px 20px;
   border-radius: 10px;
@@ -80,17 +71,7 @@ const Text = styled.div`
 
   position: relative;
 
-  &:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-    background-image: linear-gradient(to right, #1b3bf1 30%, #644bf6 50%);
-    border-radius: inherit;
-  }
+ 
 `;
 
 const ContainerContent = styled.div`

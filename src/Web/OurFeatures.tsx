@@ -29,7 +29,7 @@ const OurFeaturesSectionWrapper = styled.div`
    
   align-items: center;
   padding: 100px 10vw;
-  background-image: radial-gradient(187% 50% at 50% -38%,  #2b1268 77.5%, rgba(255, 255, 255, .016) 88.13%, rgba(255, 255, 255, 0) 100%), radial-gradient(97% 109% at 48% 20%, rgba(0, 0, 0, .07) 0,#120532 100%);
+  background-image: radial-gradient(187% 50% at 50% -38%,  #2b1268 77.5%, rgba(255, 255, 255, .016) 88.13%, rgba(255, 255, 255, 0) 100%), radial-gradient(97% 109% at 48% 20%, rgba(0, 0, 0, .07) 0, rgb(18, 18, 20) 100%);
 
 
 
@@ -54,7 +54,7 @@ export const Featurecard = styled.div`
     text-align: center;
     gap: 1rem;
     padding: 20px;
-    box-shadow: 0 0 0 0.4px #562ac7;
+    box-shadow: 0 0 0 0.6px #dfdfdf;
     border-radius: 10px;
     min-width: 180px;
     max-width: 550px;
@@ -145,7 +145,7 @@ export const Leftalignedsection = styled.div`
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 0 0 0.3px #0e93f3;
+    box-shadow: 0 0 0 0.5px #04d361;
     transition: background-color 0.2s ease-in-out;
   }
 
@@ -165,22 +165,12 @@ export const ContainerGrid = styled.div`
   display: flex;
   padding: 1.5rem 7.5rem;
   border-radius: 10px;
-  background-color:  #111033;
+  background-color:  rgba(28, 31,38,1);
+  box-shadow: 0 0 0 0.3px #dfdfdf;
   flex-direction: column;
   gap: 2rem;
-  box-shadow: 0 0 0 0.2px #dfdfdf;
   position: relative;
-  &:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background-image: linear-gradient(to top, #4863f7 30%, #562ac7 70%);
-    border-radius: inherit;
-  }
+  
 
 
   .points {
@@ -206,7 +196,6 @@ export function OurFeaturesSection() {
       </Leftalignedsection>
 
       <ContainerGrid>
-           <img src={Points} alt="" className='points' />
           <Featurecard>
             <Featureicon>
               <Indicator children={undefined} />
