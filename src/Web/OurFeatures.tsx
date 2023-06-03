@@ -3,7 +3,7 @@ import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
 import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
 import { Indicator } from '@mantine/core';
-import Points from "../assets/ImagePoints.svg"
+
 
 const OurFeaturesSectionWrapper = styled.div`
   @font-face {
