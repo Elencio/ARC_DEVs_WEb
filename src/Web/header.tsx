@@ -88,6 +88,7 @@ const MenuItem = styled.li`
   padding: 2rem;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
+  cursor: pointer;
 
   &:hover {
     border-bottom: 3px solid #04d361;

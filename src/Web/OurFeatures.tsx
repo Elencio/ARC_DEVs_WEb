@@ -165,8 +165,8 @@ export const ContainerGrid = styled.div`
   display: flex;
   padding: 1.5rem 7.5rem;
   border-radius: 10px;
-  background-color:  rgba(28, 31,38,1);
-  box-shadow: 0 0 0 0.3px #dfdfdf;
+  background-color: #1c1f26;
+  box-shadow: 0 0 0 0.3px #383d47;
   flex-direction: column;
   gap: 2rem;
   position: relative;

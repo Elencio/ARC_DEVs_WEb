@@ -2,6 +2,11 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
+import FacebookIcon from "../assets/facebook-1.svg"
+import LinkedinIcon from "../assets/linkedin.svg"
+import GithubIcon from "../assets/github-2.svg"
+import { FooterSocialMediaWrapper } from "./Footer"
+import logo from "../assets/default-monochrome.svg"
 
 
 const ContactFormContainer = styled.div`
@@ -23,8 +28,8 @@ const ContactFormContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-  gap: 0.5rem;
-  padding: 1rem 20rem;
+  gap: 5rem;
+  padding: 5rem 2rem;
 
   h2, p {
     display: flex;
@@ -55,19 +60,18 @@ const TagsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
 
 
  & span{
   background-color: transparent;
+  margin-right: 0.8rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  margin: 0.5rem;
   font-family: "FontTT", sans-serif;
   font-size: 1rem;
   color: #9b59b6;
-  box-shadow: 0 0 0 0.1px #9b59b6;
+  box-shadow: 0 0 0 0.4px #9b59b6;
   transition: background-color 0.3s ease;
   
 
@@ -80,7 +84,7 @@ const TagsContainer = styled.div`
 
   span:nth-of-type(1) {
   color: #34495e;
-  box-shadow: 0 0 0 0.1px #34495e;
+  box-shadow: 0 0 0 0.4px #34495e;
 
   &:hover {
     background-color: #34495e;
@@ -90,7 +94,7 @@ const TagsContainer = styled.div`
 
 span:nth-of-type(2) {
   color:  #e67e22;
-  box-shadow: 0 0 0 0.1px  #e67e22;
+  box-shadow: 0 0 0 0.4px  #e67e22;
 
   &:hover {
     background-color:  #e67e22;
@@ -101,7 +105,7 @@ span:nth-of-type(2) {
 
 span:nth-of-type(3) {
   color: #c0392b;
-  box-shadow: 0 0 0 0.1px #c0392b;
+  box-shadow: 0 0 0 0.4px #c0392b;
 
 
   &:hover {
@@ -166,6 +170,18 @@ const Button = styled.button`
   }
 `;
 
+export const Container = styled.div`
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     gap: 1rem;
+
+     
+  .logo {
+    width: 170px;
+  }
+`
+
 export function ContactForm(){
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -181,14 +197,20 @@ export function ContactForm(){
 
   return (
     <ContactFormContainer>
-      <h2>ARC-DEVs</h2>
+      <Container>
+      <img src={logo} alt="" className='logo'/>
       <Description>Entre em contato conosco</Description>
       <TagsContainer>
-        <span>Designer</span>
-        <span>Marketing</span>
         <span>Desenvolvimento Web</span>
         <span>Data Science</span>
       </TagsContainer>
+      <FooterSocialMediaWrapper>
+             <img src={FacebookIcon} alt="" />
+             <img src={GithubIcon} alt="" />
+             <img src={LinkedinIcon} alt="" />
+      </FooterSocialMediaWrapper>
+      </Container>
+     
       <form onSubmit={handleSubmit}>
         <InputContainer>
           <Label htmlFor="name">Nome</Label>

@@ -7,6 +7,7 @@ import { Footer } from "./Footer";
 import { FounderCard } from "./FounderCard";
 import { MissionVision } from "./Mission";
 import { Header } from "./header";
+import { Card } from "../Pages/Blog";
 
 
 
@@ -20,6 +21,7 @@ export function Principal(){
        <HowItWorksSection />
        <SectionWhyChooose />
        <MissionVision />
+       <Card />
        <FounderCard />
        <GetStartedTodaySection />
        <Footer />

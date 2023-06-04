@@ -19,9 +19,9 @@ const Wrapper = styled.div`
       position: absolute;
       width: 100%;
       height: 100px;
-      top: 80px;
+      top: 0px;
       filter: blur(80px);
-      background: linear-gradient(93.51deg, #5c3382 2.84%, #0c6be7 99.18%);
+      background: radial-gradient(3.51deg, #5c3382 2.84%, #000 99.18%);
     }
   
  
@@ -51,7 +51,7 @@ const Text = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  z-index: -2;
   font-family: "FonTTT", sans-serif;
   line-height: 1.8rem;
   letter-spacing: 0.06rem;
@@ -62,7 +62,7 @@ const Text = styled.div`
   
 
   &:nth-of-type(odd) {
-    color: #3c9cf7;
+    color: #4863f7;
     box-shadow-color: #6f82ee;
     align-items: center;
   }

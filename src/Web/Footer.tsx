@@ -7,7 +7,7 @@ const Container = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: rgba(28, 31,38,1);
+  background-color: #1c1f26;
   box-shadow: 0 0 0 0.1px #c2c2c2;
 `;
 
@@ -65,7 +65,7 @@ const Link = styled.a`
   }
 `;
 
-const FooterSocialMediaWrapper = styled.div`
+export const FooterSocialMediaWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;

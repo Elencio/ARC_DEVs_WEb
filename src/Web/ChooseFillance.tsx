@@ -42,8 +42,8 @@ const ContainerHeader = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
   align-items: center;
-  background-color: rgba(28, 31,38,1);
-  box-shadow: 0 0 0 0.2px #dfdfdf;
+  background-color: #1c1f26;
+  box-shadow: 0 0 0 0.3px #383d47;
   color: #dfdfdf;
   padding: 0 3rem;
   height: 380px;
@@ -59,8 +59,8 @@ const Text = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   align-items: center;
-  background-color: rgba(28, 31,38,1);
-  box-shadow: 0 0 0 0.2px #dfdfdf;
+  background-color: #1c1f26;
+  box-shadow: 0 0 0 0.3px #383d47;
   color: #dfdfdf;
   padding: 10px 20px;
   border-radius: 10px;
