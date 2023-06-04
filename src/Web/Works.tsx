@@ -26,7 +26,9 @@ const HowItWorksSectionWrapper = styled.div`
   & h2 {
     font-size: 1.6rem;
     margin-bottom: 2.5rem;
-    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
     line-height: 1.7rem;
     font-weight: 300;
     color: #c2c2c2;
@@ -38,7 +40,9 @@ const HowItWorksSectionWrapper = styled.div`
     max-width: 600px;
     line-height: 1.7rem;
     text-align: center;
-    font-family: 'FontTT', sans-serif;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     font-weight: 300;
     color: #c2c2c2;
   }
@@ -84,9 +88,10 @@ const CardWrapper = styled.div`
     font-size: 1.2rem;
     margin-top: 1rem;
     text-align: start;
-    font-family: 'FontTT', sans-serif;
-    font-weight: bold;
-    color: #7388fd;
+    line-height: 1.7rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+    color: #82ccdd;
   }
 
   & p {
@@ -94,7 +99,9 @@ const CardWrapper = styled.div`
     margin-top: 2rem;
     text-align: start;
     line-height: 1.5rem;
-    font-family: 'FontTT', sans-serif;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     font-weight: 300;
     color: #dfdfdf;
     letter-spacing: 0.01rem;

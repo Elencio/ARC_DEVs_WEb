@@ -80,7 +80,9 @@ font-weight: 300;
 line-height: 1.7;
 letter-spacing: 1.25%;
 color: #dfdfdf;
-font-family: "FonTT", sans-serif;
+line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
 `;
 
 const FounderPosition = styled.h3`
@@ -89,7 +91,9 @@ margin-top: 5px;
 font-weight: bold;
 
 color: #dfdfdf;
-font-family: "FonTT", sans-serif;
+line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
 `;
 
 
@@ -121,7 +125,9 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-  font-family: "FonTT", sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
 }
 `;
 

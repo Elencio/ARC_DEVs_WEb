@@ -28,8 +28,10 @@ const GetStartedTodaySectionWrapper = styled.div`
   & h2 {
     font-size: 1.6rem;
     margin-bottom: 50px;
-    font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+  font-weight: 500;
   color: #c2c2c2;
   }
 
@@ -38,7 +40,9 @@ const GetStartedTodaySectionWrapper = styled.div`
     margin-bottom: 80px;
     max-width: 600px;
     text-align: center;
-    font-family: 'FonTTT', sans-serif;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     letter-spacing: 0.001rem;
     line-height: 1.7rem;
   font-weight: 300;
@@ -49,7 +53,9 @@ const GetStartedTodaySectionWrapper = styled.div`
 const StyledButton = styled.button`
   background-color: transparent;
   padding: 1rem 5rem;
-  font-family: 'Roboto' sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
   border: none;
   font-size: 1.1rem;
   border-radius: 0.5rem;

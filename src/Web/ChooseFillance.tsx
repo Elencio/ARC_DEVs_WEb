@@ -13,7 +13,9 @@ const Container = styled.div`
   flex-direction: column;
   gap: 1.7rem;
   padding: 8rem;
-  font-family: "FonTTT", sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
   letter-spacing: 1.25%;
   line-height: 1.7;
 
@@ -67,7 +69,9 @@ const Text = styled.div`
   font-size: 1.1rem;
  
 
-  font-family: "FonTTT", sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
 
   position: relative;
 
@@ -82,6 +86,9 @@ const ContainerContent = styled.div`
 
 const Text1 = styled(Text)`
   height: 300px;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
 `;
 
 const Image = styled.img`

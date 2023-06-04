@@ -51,8 +51,9 @@ const Text = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: -2;
-  font-family: "FonTTT", sans-serif;
+  line-height: 1.5rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 400;
   line-height: 1.8rem;
   letter-spacing: 0.06rem;
   border-radius: 10px;

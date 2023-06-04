@@ -40,14 +40,18 @@ const Description = styled.p`
   font-size: 1rem;
   max-width: 400px;
   align-items: start;
-  font-family: 'FontTT', sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
   font-weight: 300;
   color: #dfdfdf;
 `;
 
 const Title = styled.h4`
   font-size: 1.2rem;
-  font-family: 'FontTT', sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
   font-weight: 400;
   color: #dfdfdf;
 `;
@@ -57,7 +61,9 @@ const Link = styled.a`
   color: #dfdfdf;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-family: 'FontTT', sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
   font-weight: 300;
 
   &:hover {
@@ -86,7 +92,9 @@ const FooterCopyright = styled.p`
   font-size: 1rem;
   margin-top: 50px;
   color: #dfdfdf;
-  font-family: 'FontTT', sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
   font-weight: 300;
   line-height: 1.25rem;
   display: flex;

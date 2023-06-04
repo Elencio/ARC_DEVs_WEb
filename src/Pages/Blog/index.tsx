@@ -41,7 +41,10 @@ const ImageContainer = styled.div`
     font-size: 1rem;
     left: 220px;
     border-radius: 10px;
-    font-family: "FontTT", sans-serif;
+ 
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     line-height: 1.7;
     letter-spacing: 1.25%;
     color: #dfdfdf ;
@@ -65,7 +68,9 @@ const Title = styled.h2`
   padding: 16px;
   font-size: 1.5rem;
   color: #4863f7;
-  font-family: "FontTT", sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     line-height: 1.7;
     letter-spacing: 1.25%;
 `;
@@ -74,7 +79,9 @@ const Description = styled.p`
   margin: 0;
   padding: 16px;
   color: #dfdfdf;
-  font-family: "FontTT", sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     line-height: 1.7;
     letter-spacing: 1.25%;
 `;
@@ -85,7 +92,9 @@ const Footer = styled.div`
   align-items: center;
   padding: 16px;
   color: #dfdfdf;
-  font-family: "FontTT", sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     line-height: 1.7;
     letter-spacing: 1.25%;
 
@@ -105,7 +114,9 @@ const ProfileImage = styled.img`
 const ProfileName = styled.span`
   font-weight: bold;
   font-size: 1rem;
-  font-family: "FontTT", sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     line-height: 1.7;
     letter-spacing: 1.25%;
 `;
@@ -127,6 +138,9 @@ export const Carde = styled.div`
 
   h1{
     color: #dfdfdf;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
   }
 `
 const SeeBlogWrapper = styled.div`
@@ -143,7 +157,9 @@ const SeeBlogWrapper = styled.div`
 const SeeBlogText = styled.strong`
   font-weight: bold;
   font-size: 1.2rem;
-    font-family: "FontTT", sans-serif;
+  line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     line-height: 1.7;
     color: #dfdfdf;
     letter-spacing: 1.25%;

@@ -63,8 +63,9 @@ export const Featurecard = styled.div`
 
     h4 {
     font-size: 1.1rem;
-    font-family: 'FontTT', sans-serif;
-    font-weight: 300;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     color: #dfdfdf;
     line-height: 1.7;
     letter-spacing: 1.25%;
@@ -73,7 +74,9 @@ export const Featurecard = styled.div`
   p {
  
     font-size: 1.1rem;
-    font-family: 'FontTT', sans-serif;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     font-weight: 300;
     color: #dfdfdf;
     line-height: 1.7;
@@ -121,8 +124,9 @@ export const Leftalignedsection = styled.div`
 
    h1 {
     font-size: 1.8rem;
-    font-family: 'FontTT', sans-serif;
-    font-weight: 300;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
     color: #dfdfdf;
     line-height: 1.7;
     letter-spacing: 1.25%;
@@ -130,8 +134,9 @@ export const Leftalignedsection = styled.div`
 
    h2 {
     font-size: 1.1rem;
-    font-family: 'FontTT', sans-serif;
-    font-weight: 300;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     color: #dfdfdf;
     line-height: 1.7;
     letter-spacing: 1.25%;
@@ -153,8 +158,9 @@ export const Leftalignedsection = styled.div`
     font-size: 1.1rem;
     line-height: 1.7rem;
     margin-bottom: 80px;
-    font-family: 'FontTT', sans-serif;
-    font-weight: 300;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
     color: #dfdfdf;
     line-height: 1.7;
     letter-spacing: 1.25%;

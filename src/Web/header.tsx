@@ -55,8 +55,8 @@ const MenuList = styled.ul<{ isMenuOpen: boolean }>`
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  font-family: 'FontTT', sans-serif;
-  font-weight: 300;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 400;
   color: #dfdfdf;
 
   @media only screen and (max-width: 768px) {
@@ -82,10 +82,10 @@ const MenuList = styled.ul<{ isMenuOpen: boolean }>`
 
 const MenuItem = styled.li`
   font-size: 1.1rem;
-  font-family: 'FontTT', sans-serif;
-  font-weight: 300;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 400;
   color: #dfdfdf;
-  padding: 2rem;
+  padding: 1.5rem;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
   cursor: pointer;

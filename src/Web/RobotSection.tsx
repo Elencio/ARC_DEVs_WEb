@@ -39,7 +39,7 @@ const RobotSectionWrapper = styled.div`
   & h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    font-family: 'FontTT', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 500;
     line-height: 1.7;
     color: #ffffff;
@@ -49,13 +49,13 @@ const RobotSectionWrapper = styled.div`
   }
 
   & p {
-    font-size: 1rem;
+    font-size: 1.125rem;
     margin-bottom: 80px;
-    font-family: 'FontTT', sans-serif;
-    line-height: 2rem;
-    font-weight: 300;
+    font-family: 'Hanken Grotesk', sans-serif;
+    line-height: 1.75rem;
+    font-weight: 400;
     letter-spacing: 1.25%;
-    color: #d0c6c6;
+    color: #F8FAFC;
     text-align: center;
   }
 
@@ -128,41 +128,29 @@ export const KeywordsWrapper = styled.div`
     font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
-    padding: 0.5rem;
-    font-family: 'FontTT', sans-serif;
-    font-weight: 300;
+    background-color: rgb(18, 18, 20);
+    padding: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+    position: relative;
+
+    &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -1.2px;
+    left: -1.2px;
+    right: -1.2px;
+    bottom: -1px;
+    background-image: linear-gradient(to right, #6a89cc 20%, #78e08f 50%);
+    border-radius: inherit;
+  }
  
   }
 
-  p:nth-of-type(1) {
-  color: #4863f7;
-  box-shadow: 0 0 0 0.3px #4863f7;
-}
+ 
 
-p:nth-of-type(2) {
-  color: #04d361;
-  box-shadow: 0 0 0 0.3px #04d361;
-}
-
-p:nth-of-type(3) {
-  color: #4863f7;
-  box-shadow: 0 0 0 0.3px #4863f7;
-}
-
-p:nth-of-type(4) {
-  color: #04d361;
-  box-shadow: 0 0 0 0.3px #04d361;
-}
-
-p:nth-of-type(5) {
-  color: #4863f7;
-  box-shadow: 0 0 0 0.3px #4863f7;
-}
-
-p:nth-of-type(6) {
-  color: #04d361;
-  box-shadow: 0 0 0 0.3px #04d361;
-}
 `;
 
 export function RobotSection(){
