@@ -6,7 +6,7 @@ import Image1 from "../../assets/pexels-nataliya-vaitkevich-4450115.jpg"
 import Image2 from "../../assets/pexels-pixabay-316093.jpg"
 import Image3 from "../../assets/pexels-pavel-danilyuk-8438944.jpg"
 import Image4 from "../../assets/pexels-daniel-putzer-633409.jpg"
-import FontTT from "../../fonts/Font files/otf-files/TT Norms Std Condensed Regular.otf"
+
 import { NavLink } from 'react-router-dom';
 
 const Container = styled.div`
@@ -20,12 +20,6 @@ padding: 1rem;
   border-radius: 10px;
   position: relative;
 
-
-
-  @font-face {
-    font-family: "FontTT" ;
-    src: url(${FontTT});
-  }
 `;
 
 const ImageContainer = styled.div`
