@@ -131,7 +131,7 @@ export function Header() {
         </NavToggle>
         <MenuList isMenuOpen={isMenuOpen}>
           <MenuItem>Features</MenuItem>
-          <MenuItem>Learn</MenuItem>
+          <MenuItem>Blog</MenuItem>
           <MenuItem>About</MenuItem>
           <MenuItem>Contact</MenuItem>
         </MenuList>
