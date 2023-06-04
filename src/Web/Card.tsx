@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import { FaShareAlt } from 'react-icons/fa'
 import { MdOutlineFavoriteBorder } from "react-icons/md"
 import { BsArrowRightSquare, BsFillBookmarkFill } from "react-icons/bs"
-import Image1 from "../../assets/pexels-nataliya-vaitkevich-4450115.jpg"
-import Image2 from "../../assets/pexels-pixabay-316093.jpg"
-import Image3 from "../../assets/pexels-pavel-danilyuk-8438944.jpg"
-import Image4 from "../../assets/pexels-daniel-putzer-633409.jpg"
+import Image1 from "../assets/pexels-nataliya-vaitkevich-4450115.jpg"
+import Image2 from "../assets/pexels-pixabay-316093.jpg"
+import Image3 from "../assets/pexels-pavel-danilyuk-8438944.jpg"
+import Image4 from "../assets/pexels-daniel-putzer-633409.jpg"
 
 import { NavLink } from 'react-router-dom';
 
@@ -19,6 +19,7 @@ padding: 1rem;
   box-shadow: 0 0 0 0.3px #383d47;
   border-radius: 10px;
   position: relative;
+  overflow: hidden;
 
 `;
 
@@ -67,6 +68,16 @@ const Title = styled.h2`
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 1.25%;
+    transform: translateY(-100%);
+  animation: slideDown 1.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+
+
+
+  @keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
 `;
 
 const Description = styled.p`

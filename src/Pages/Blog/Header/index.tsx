@@ -1,6 +1,6 @@
 
 import {Header, Logo, Nav, NavLink} from "./styles"
-import logo from "../../assets/default-monochrome.svg"
+import logo from "../../../assets/default-monochrome.svg"
 
 
 export function HeaderContainer() {

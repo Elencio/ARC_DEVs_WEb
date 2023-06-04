@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Hero from "../../assets/pexels-pavel-danilyuk-8438944.jpg"
+import Hero from "../../../assets/pexels-pavel-danilyuk-8438944.jpg"
 
 export const HeroSection = styled.section`
   background: url(${Hero}) no-repeat center center;

@@ -7,7 +7,7 @@ import { Footer } from "./Footer";
 import { FounderCard } from "./FounderCard";
 import { MissionVision } from "./Mission";
 import { Header } from "./header";
-import { Card } from "../Pages/Blog";
+import { Card } from "./Card";
 
 
 
