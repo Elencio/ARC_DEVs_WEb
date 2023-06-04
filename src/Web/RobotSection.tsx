@@ -143,7 +143,7 @@ export const KeywordsWrapper = styled.div`
     left: -1.2px;
     right: -1.2px;
     bottom: -1px;
-    background-image: linear-gradient(to right, #6a89cc 20%, #78e08f 50%);
+    background-image: linear-gradient(to right, #cb2d3e 20%, #ef473a 50%);
     border-radius: inherit;
   }
  
