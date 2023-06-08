@@ -61,13 +61,12 @@ const Image = styled.img`
 const Title = styled.h2`
   margin: 0;
   padding: 16px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #4863f7;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
     line-height: 1.7;
-    letter-spacing: 1.25%;
     transform: translateY(-100%);
   animation: slideDown 1.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 
@@ -84,11 +83,11 @@ const Description = styled.p`
   margin: 0;
   padding: 16px;
   color: #dfdfdf;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
+    font-size: 1.125rem;
     line-height: 1.7;
-    letter-spacing: 1.25%;
 `;
 
 const Footer = styled.div`
@@ -97,11 +96,11 @@ const Footer = styled.div`
   align-items: center;
   padding: 16px;
   color: #dfdfdf;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
-    line-height: 1.7;
-    letter-spacing: 1.25%;
+    font-size: 1.125rem;
+
 
   & > div {
     display: flex;
@@ -117,13 +116,11 @@ const ProfileImage = styled.img`
 `;
 
 const ProfileName = styled.span`
-  font-weight: bold;
-  font-size: 1rem;
-  line-height: 1.5rem;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    letter-spacing: 1.25%;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+ ;
 `;
 
 export const ContainerCards = styled.div`
@@ -143,9 +140,10 @@ export const Carde = styled.div`
 
   h1{
     color: #dfdfdf;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 1.5rem;
   }
 `
 const SeeBlogWrapper = styled.div`
@@ -160,14 +158,11 @@ const SeeBlogWrapper = styled.div`
 `;
 
 const SeeBlogText = styled.strong`
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.75rem;
     color: #dfdfdf;
-    letter-spacing: 1.25%;
 `;
 
 const ArrowIcon = styled(BsArrowRightSquare)`
