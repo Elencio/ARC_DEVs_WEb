@@ -13,7 +13,7 @@ export function App(){
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
          <Router />
-      <GlobalStyle />
+       <GlobalStyle />
       </BrowserRouter>
     </ThemeProvider>
   )

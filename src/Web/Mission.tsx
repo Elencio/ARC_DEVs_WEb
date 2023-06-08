@@ -63,7 +63,7 @@ const Text = styled.div`
   
 
   &:nth-of-type(odd) {
-    color: #4863f7;
+    color: #B1BCFC;
     box-shadow-color: #6f82ee;
     align-items: center;
   }
