@@ -123,23 +123,19 @@ export const Leftalignedsection = styled.div`
    gap: 0.6rem;
 
    h1 {
-    font-size: 1.8rem;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 500;
     color: #dfdfdf;
-    line-height: 1.7;
-    letter-spacing: 1.25%;
    }
 
    h2 {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
     color: #dfdfdf;
-    line-height: 1.7;
-    letter-spacing: 1.25%;
   }
 
   button {
@@ -155,10 +151,9 @@ export const Leftalignedsection = styled.div`
   }
 
   p {
-    font-size: 1.1rem;
-    line-height: 1.7rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     margin-bottom: 80px;
-    line-height: 1.5rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
     color: #dfdfdf;

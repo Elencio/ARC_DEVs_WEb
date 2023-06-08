@@ -6,9 +6,6 @@ import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
 const Wrapper = styled.div`
   display: flex;
   margin: 0;
-
-  font-family: "FonMonK", sans-serif;
-
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -43,7 +40,7 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   text-align: center;
   margin-bottom: 2rem;
   padding: 1rem;
@@ -51,11 +48,9 @@ const Text = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
   font-family: 'Hanken Grotesk', sans-serif;
   font-weight: 400;
-  line-height: 1.8rem;
-  letter-spacing: 0.06rem;
   border-radius: 10px;
   width: 400px;
   box-shadow: 0 0 0 0.3px;

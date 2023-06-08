@@ -26,27 +26,24 @@ const GetStartedTodaySectionWrapper = styled.div`
   margin-bottom: 2rem;
 
   & h2 {
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     margin-bottom: 50px;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 400;
   font-weight: 500;
   color: #c2c2c2;
   }
 
   & p {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     margin-bottom: 80px;
     max-width: 600px;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
     letter-spacing: 0.001rem;
-    line-height: 1.7rem;
-  font-weight: 300;
-  color: #c2c2c2;
+  color: #dfdfdf;
   }
 `;
 

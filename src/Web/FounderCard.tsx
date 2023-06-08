@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import FonTTT from "../fonts/Font files/otf-files/TT Norms Std Condensed Regular.otf"
-import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
 import { GithubIcon, TwitterIcon } from '@mantine/ds';
 import { LinkedinLogo } from 'phosphor-react';
 
@@ -56,15 +54,6 @@ flex-direction: column;
 align-items: center;
 border-radius: 20px;
 
-@font-face {
-    font-family: "FonMonK";
-    src: url(${FonMonK});
-  }
-
-  @font-face {
-    font-family: "FonTT";
-    src: url(${FonTTT});
-  }
 `;
 
 const FounderImage = styled.img`
@@ -75,25 +64,20 @@ border-radius: 50%;
 
 const FounderName = styled.h2`
 margin-top: 10px;
-font-size: 1.1rem;
-font-weight: 300;
-line-height: 1.7;
-letter-spacing: 1.25%;
+font-size: 1.125rem;
+font-weight: 400;
 color: #dfdfdf;
-line-height: 1.5rem;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 400;
+line-height: 1.75rem;
+font-family: 'Hanken Grotesk', sans-serif;
 `;
 
 const FounderPosition = styled.h3`
-font-size: 1.2rem;
+font-size: 1.125rem;
 margin-top: 5px;
-font-weight: bold;
-
+font-weight: 500;
 color: #dfdfdf;
-line-height: 1.5rem;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 400;
+line-height: 1.75rem;
+font-family: 'Hanken Grotesk', sans-serif;
 `;
 
 
@@ -118,16 +102,16 @@ text-align: center;
 color: #dfdfdf;
 
 h1 {
-  font-size: 1.6rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 500;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 500;
+
 }
 `;
 

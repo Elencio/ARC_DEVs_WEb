@@ -37,19 +37,18 @@ const ColumnContainer = styled.div`
 `;
 
 const Description = styled.p`
-  font-size: 1rem;
+  font-size: 1.125rem;
   max-width: 400px;
   align-items: start;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
-  font-weight: 300;
   color: #dfdfdf;
 `;
 
 const Title = styled.h4`
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
   font-weight: 400;
@@ -57,14 +56,13 @@ const Title = styled.h4`
 `;
 
 const Link = styled.a`
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #dfdfdf;
   text-decoration: none;
   transition: color 0.3s ease;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
-  font-weight: 300;
 
   &:hover {
     color: white;
@@ -89,14 +87,12 @@ export const FooterSocialMediaWrapper = styled.div`
 `
 
 const FooterCopyright = styled.p`
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin-top: 50px;
   color: #dfdfdf;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 400;
-  font-weight: 300;
-  line-height: 1.25rem;
+    font-weight: 400;;
   display: flex;
   flex-direction: row;
   align-items: center;

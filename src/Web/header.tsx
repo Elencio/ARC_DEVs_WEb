@@ -25,8 +25,8 @@ const HeaderWrapper = styled.div`
     font-family: 'FontTT', sans-serif;
     font-weight: 500;
     color: #fff;
-    line-height: 1.7rem;
-    font-size: 1.2rem;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
   }
 
   img {
@@ -54,9 +54,10 @@ const MenuList = styled.ul<{ isMenuOpen: boolean }>`
   align-items: center;
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-family: 'Hanken Grotesk', sans-serif;
   font-weight: 400;
+  line-height: 1.75rem;
   color: #dfdfdf;
 
   @media only screen and (max-width: 768px) {
@@ -81,9 +82,10 @@ const MenuList = styled.ul<{ isMenuOpen: boolean }>`
 `;
 
 const MenuItem = styled.li`
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   font-family: 'Hanken Grotesk', sans-serif;
   font-weight: 400;
+  line-height: 1.75rem;
   color: #dfdfdf;
   padding: 1.5rem;
   border-top: 3px solid transparent;

@@ -6,25 +6,6 @@ import FonMon from "../fonts/momcake-font/MomcakeBold-WyonA.otf"
 import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
 
 const RobotSectionWrapper = styled.div`
-  
-  @font-face {
-    font-family: "FontSpart" ;
-    src: url(${FontSpart});
-  }
-
-  @font-face {
-    font-family: "FontTT" ;
-    src: url(${FontTT});
-  }
-    
-  @font-face {
-    font-family: "FontMon" ;
-    src: url(${FonMon});
-  }
-
-
-
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,11 +18,11 @@ const RobotSectionWrapper = styled.div`
   will-change: opacity,transform;
 
   & h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 50px;
     font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 500;
-    line-height: 1.7;
+    font-weight: 600;
+    line-height: 1.75rem;
     color: #ffffff;
     text-align: center;
 
@@ -125,12 +106,12 @@ export const KeywordsWrapper = styled.div`
 
   & p {
     margin: 25px 27px;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.125rem;
+    font-weight: 400;
     border-radius: 5px;
     background-color: rgb(18, 18, 20);
     padding: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
     position: relative;

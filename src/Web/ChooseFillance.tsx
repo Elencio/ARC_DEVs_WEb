@@ -1,41 +1,21 @@
 import styled from 'styled-components';
-import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
-import FonMonK from "../fonts/momcake-font/MomcakeThin-9Y6aZ.otf"
 import Imageone from "../assets/imagem1.svg"
 import Cube from "../assets/cube.svg"
 import Triangulo from "../assets/triangulo.svg"
-import FonTTT from "../fonts/Font files/otf-files/TT Norms Std Condensed Regular.otf"
+
 
 
 const Container = styled.div`
-
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
   padding: 8rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
   letter-spacing: 1.25%;
   line-height: 1.7;
 
-  @font-face {
-    font-family: "FonTTT";
-    src: url(${FonTTT}) format('opentype');
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "FontSpart";
-    src: url(${FontSpart}) format('opentype');
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Fontmonk";
-    src: url(${FonMonK}) format('opentype');
-    font-display: swap;
-  }
 `;
 
 const ContainerHeader = styled.div`
@@ -70,8 +50,7 @@ const Text = styled.div`
  
 
   line-height: 1.5rem;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 400;
+   
 
   position: relative;
 
@@ -86,9 +65,9 @@ const ContainerContent = styled.div`
 
 const Text1 = styled(Text)`
   height: 300px;
-  line-height: 1.5rem;
-    font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 400;
+    line-height: 1.75rem;
+    font-family: 'Hanken Grotesk', sans-serif;
 `;
 
 const Image = styled.img`

@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { useState } from 'react';
-import FontTT from "../fonts/Font files/otf-files/TT Tricks Regular.otf"
-import FontSpart from "../fonts/league-spartan/LeagueSpartan-Bold.otf"
 import FacebookIcon from "../assets/facebook-1.svg"
 import LinkedinIcon from "../assets/linkedin.svg"
 import GithubIcon from "../assets/github-2.svg"
@@ -10,17 +8,6 @@ import logo from "../assets/default-monochrome.svg"
 
 
 const ContactFormContainer = styled.div`
-
-@font-face {
-    font-family: "FontSpart" ;
-    src: url(${FontSpart});
-  }
-
-  @font-face {
-    font-family: "FontTT" ;
-    src: url(${FontTT});
-  }
-
 
 
   display: flex;
@@ -31,14 +18,24 @@ const ContactFormContainer = styled.div`
   gap: 5rem;
   padding: 5rem 2rem;
 
-  h2, p {
+  h2 {
+    font-size: 1.25rem;
+    align-items: start;
+    line-height: 1.75rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+  color: #dfdfdf;
+  }
+  
+  p {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "FontTT", sans-serif;
-  letter-spacing: 1.25%;
-  line-height: 1.7;
-  color: #c4c4c4;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+  color: #dfdfdf;
   }
 
 
